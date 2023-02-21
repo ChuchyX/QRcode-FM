@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+$White: hsl(0, 0%, 100%);
+$Lightgray: hsl(212, 45%, 89%);
+$Grayishblue: hsl(220, 15%, 55%);
+$Darkblue: hsl(218, 44%, 22%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+}
+main{
+    background-color: $Lightgray;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 20rem;
+    height: 28rem;
+    background-color: $White;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    justify-items: center;
+    padding: 1rem;
+}
+.img_qr{
+    width: 97%;
+    border-radius: 10px;
+}
+.h1_title{
+    width: 85%;
+    color: $Darkblue;
+    margin-top: 0.8rem;
+    text-align: center;
+}
+.paragraph{
+    width: 85%;
+    color: $Grayishblue;
+    font-size: 15px;
+    text-align: center;   
+}
